@@ -12,4 +12,10 @@ make install
 streamlit run home.py
 ```
 
-Sample test files can be found in `test_files` directory. Or use samples from https://github.com/plotly/datasets .
+Sample test files can be found in `tests/datasets` directory. Or use samples from https://github.com/plotly/datasets .
+
+# Test (uses pytest-selenium)
+
+```
+pytest -v
+```

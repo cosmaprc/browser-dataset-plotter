@@ -69,9 +69,9 @@ install:
 	@${deactivate-venv}
 	@echo "******** Installation complete ********"
 	@echo "To activate the virtual environment, run:"
-	@echo "deactivate"
+	@echo ""source $(VENV_ACTIVATE)"
 	@echo "To deactivate the virtual environment, run:"
-	@echo "source $(VENV_DEACTIVATE)"
+	@echo "deactivate"
 	@echo "To uninstall the virtual environment, run:"
 	@echo "make uninstall"
 	@echo "To run the pre-commit hooks, run:"
