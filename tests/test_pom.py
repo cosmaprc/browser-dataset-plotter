@@ -14,4 +14,4 @@ def test_home_functionality(firefox_browser):
     # Open Page
     home_page.open_page(url)
 
-    home_page.verify_successful_home_page_loading()
+    assert home_page.verify_successful_home_page_loading()

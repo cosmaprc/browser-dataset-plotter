@@ -1,6 +1,5 @@
 import pytest
 from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
 
@@ -9,7 +8,6 @@ from webdriver_manager.firefox import GeckoDriverManager
 def firefox_browser():
     # Configure Firefox options
     options = webdriver.FirefoxOptions()
-    options.add_argument("start-maximized")
     options.add_argument("--headless")
 
     # Download the GeckoDriver binary on the fly
