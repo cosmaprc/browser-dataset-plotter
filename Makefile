@@ -6,7 +6,7 @@ help:
 	@echo "  make uninstall"
 
 SHELL := /bin/bash
-VENV_NAME := dataset-browser-plotter
+VENV_NAME := browser-dataset-plotter
 VENV_DIR := ~/.virtualenvs
 VENV_DIR_NAME := $(VENV_DIR)/$(VENV_NAME)
 VENV_BIN_DIR := $(VENV_DIR_NAME)/bin
@@ -60,7 +60,7 @@ define uninstall-venv
 endef
 
 install:
-	@(shell read -p "Please ensure python3 is installed and available in your PATH. Press enter to continue...")
+	@$(shell read -p "Please ensure python3 is installed and available in your PATH. Press enter to continue...")
 	@${create-venv}
 	@${activate-venv}
 	@${venv-upgrade-pip}
@@ -69,7 +69,7 @@ install:
 	@${deactivate-venv}
 	@echo "******** Installation complete ********"
 	@echo "To activate the virtual environment, run:"
-	@echo ""source $(VENV_ACTIVATE)"
+	@echo "source $(VENV_ACTIVATE)"
 	@echo "To deactivate the virtual environment, run:"
 	@echo "deactivate"
 	@echo "To uninstall the virtual environment, run:"
